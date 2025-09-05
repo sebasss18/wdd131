@@ -130,7 +130,7 @@ h1 {
     align-items: center;
 }
 
-.about-location h2 {
+.about-location h3 {
     grid-column: 1;
     text-align: center;
     margin-bottom: auto;
