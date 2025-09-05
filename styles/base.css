@@ -81,7 +81,7 @@ main {
     border-radius: 25px;
 }
 
-.card1 h2 {
+.card1 h1 {
     text-align: center;
     margin-top: 5px;
     background-color: var(--primary-color);
