@@ -33,18 +33,19 @@ h1 {
     border: none;
 }
 
+#menu.show::before {
+    content: "x";
+}
+
 #links {
     display: none;
 }
 
 #links.show {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
-
-#links ul li {
-    margin-bottom: 15px;
-}
-
 
 ul {
     list-style: none;
@@ -53,26 +54,27 @@ ul {
 a {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     text-decoration: none;
     color: var(--secondary-color);
     font-weight: bold;
 }
 
-figure {
+.figure-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-}
-
-figure > div {
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-figure img{
+figure img {
     border-radius: 5px;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 0.9rem;
 }
 
 footer {
