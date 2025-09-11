@@ -37,13 +37,26 @@ h1 {
     display: none;
 }
 
+#links.show {
+    display: block;
+}
+
+#links ul li {
+    margin-bottom: 15px;
+}
+
+
 ul {
     list-style: none;
 }
 
 a {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     text-decoration: none;
     color: var(--secondary-color);
+    font-weight: bold;
 }
 
 figure {
