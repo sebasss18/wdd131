@@ -1,0 +1,27 @@
+@media screen and (min-width: 500px) {
+
+    #menu {
+        display: flex;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-evenly;
+        padding: 10px;
+        font-size: 1.2rem;
+    }
+    
+    a {
+        display: inline-block;
+        transition: transform 0.3s;
+    }
+
+    a:hover {
+        transform: scale(1.2);
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
