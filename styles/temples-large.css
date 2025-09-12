@@ -52,12 +52,7 @@
 
     figure img:hover {
         transform: scale(1.030);
-        box-shadow: 5px 5px 5px rgba(0,0,0,0.15);
-    }
-
-    figcaption {
-        display: block;
-        width: 100%;
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
     }
 
 }
