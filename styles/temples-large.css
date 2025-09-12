@@ -2,30 +2,26 @@
 
     #links {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     header {
         font-size: 2rem;
     }
-
-    ul {
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: space-evenly;
-        padding: 10px;
-        font-size: 1.2rem;
-    }
     
-    li a {
-        font-size: 1.5rem;
+    main h2 {
+        font-size: 2rem;
+        text-align: center;
     }
 
-    a {
-        display: inline-block;
+    nav a {
+        padding-bottom: 20px;
+        font-size: 1.5rem;
         transition: transform 0.3s, color 0.3s;
     }
 
-    a:hover {
+    nav a:hover {
         transform: scale(1.2);
         color: white;
     }

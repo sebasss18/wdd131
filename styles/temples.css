@@ -30,6 +30,11 @@ h1 {
     font-size: 3rem;
 }
 
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
 #menu::before {
     content: '≡';
 }
@@ -56,13 +61,11 @@ h1 {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 20px;
+    font-size: 1.2rem;
 }
 
-ul {
-    list-style: none;
-}
-
-a {
+nav a {
     display: flex;
     flex-direction: column;
     text-decoration: none;
@@ -71,7 +74,6 @@ a {
 }
 
 nav a:hover {
-    transform: scale(1.2);
     color: white;
 }
 
