@@ -50,7 +50,6 @@
     figure img {
         box-shadow: 0 0 0 transparent;
         transition: transform 0.5s, box-shadow 0.5s;
-        display: block;
         margin: 0 auto;
     }
 
@@ -60,11 +59,8 @@
     }
 
     figcaption {
-    text-align: center;
-    margin-top: 8px;
-    font-size: 0.9rem;
-    display: block;
-    width: 100%;
+        display: block;
+        width: 100%;
     }
 
 }
