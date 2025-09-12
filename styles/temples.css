@@ -7,18 +7,22 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
 
-/*Mobile form*/
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 5px;
     display: grid;
-    margin: 0px;
+    align-items: center;
+    border-radius: 0px 0px 20px 20px;
 }
 
 h1 {
-    margin: 1rem auto;
+    text-align: center;
+    font-size: 3rem;
 }
 
 #menu::before {
@@ -26,9 +30,10 @@ h1 {
 }
 
 #menu {
-    display: block;
     margin-left: auto;
-    font-size: 40px;
+    margin-right: 10px;
+    display: block;
+    font-size: 3rem;
     background: none;
     border: none;
 }
@@ -42,6 +47,7 @@ h1 {
 }
 
 #links.show {
+    margin-top: 0;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -57,6 +63,11 @@ a {
     text-decoration: none;
     color: var(--secondary-color);
     font-weight: bold;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    color: white;
 }
 
 .figure-container {
@@ -83,10 +94,5 @@ footer {
     text-align: center;
     padding: 5px;
     font-size: 1.1rem;
-}
-
-main h1 {
-    display: flex;
-    justify-content: center;
 }
 
