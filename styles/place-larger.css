@@ -28,7 +28,7 @@
     }
 
     .data h2, .weather h2 {
-        background-color: #2e4b30;
+        background-color: #b60e0e;
         border-radius: 10px;
         margin-left: -35px;
         padding: 10px;
@@ -57,7 +57,7 @@
         flex-direction: column;
         list-style: inside;
         text-align: left;
-        background-color: #466e49;
+        background-color: #355136;
         padding: 15px;
         border-radius: 10px;
         font-size: 0.9rem;
