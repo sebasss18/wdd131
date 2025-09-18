@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image sizing</title>
+</head>
+<body>
+    <img
+    srcset="images/landscape.jpg 8000w, images/landscape.jpg 3000w"
+    sizes="(max-width: 600px) 500px, 800px"
+    src="images/landscape.jpg" 
+    alt="landscape">
+<picture>
+    <source srcset="images/landscape.jpg" media="min-width: 1000px">
+    <source srcset="images/landscape.jpg" media="min-width: 550px">
+    <img src="images/landscape.jpg" alt="landscape" width="400" height="200">
+</picture>
+
+</body>
+</html>
