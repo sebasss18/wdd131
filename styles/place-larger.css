@@ -63,7 +63,7 @@
         width: 30px;
         height: 24px; 
         margin-left: 10px;
-        background: url('/images/weather-icon-white.svg') no-repeat center/contain;
+        background: url('images/weather-icon-white.svg') no-repeat center/contain;
         vertical-align: middle;
         color: white;
     }
