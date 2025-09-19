@@ -48,14 +48,12 @@ picture img {
     border-radius: 10px 10px 0 0;
 }
 
-.weather h2::after {
-    content: '';
-    display: inline-block; 
+#weather-icon {
+    display: inline-block;
     width: 30px;
-    height: 24px; 
-    margin-left: 5px;
+    height: 24px;
+    margin-left: 5px; /* igual que antes */
     vertical-align: middle;
-    background: url('/images/weather-icon-black.svg') no-repeat center/contain;
 }
 
 ul {

@@ -41,6 +41,10 @@
         cursor: default;
     }
 
+    #weather-icon {
+        display: none;
+    }
+
     .weather h2::after {
         content: '';
         display: inline-block; 
