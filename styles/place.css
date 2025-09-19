@@ -14,7 +14,7 @@ header {
     width: 100%;
     box-sizing: border-box;
     background-color: #2e4b30;
-    padding: 25px;
+    padding: 1px;
     font-size: 1.7rem;
     border-radius: 0px 0px 15px 15px;
     color: var(--font-color);
