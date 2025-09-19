@@ -14,7 +14,7 @@ header {
     width: 100%;
     box-sizing: border-box;
     background-color: #2e4b30;
-    padding: 1px;
+    padding: 2px;
     font-size: 1.7rem;
     border-radius: 0px 0px 15px 15px;
     color: var(--font-color);
@@ -44,15 +44,15 @@ picture img {
     background-color: var(--secondary-color);
     padding: 10px;
     display: inline-block;
-    margin-bottom: 0px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 40px 40px 0 0;
+    margin: 20px 100px 0 100px;
 }
 
 #weather-icon {
     display: inline-block;
     width: 30px;
     height: 24px;
-    margin-left: 5px; /* igual que antes */
+    margin-left: 5px;
     vertical-align: middle;
 }
 
@@ -66,8 +66,8 @@ ul {
     padding: 15px;
     font-size: 1rem;
     row-gap: 8px;
-    margin-top: 0px;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 40px 40px;
+    margin: 0px 100px 0px 100px;
 }
 
 /* Footer */
@@ -79,4 +79,5 @@ footer {
     padding: 5px;
     font-size: 1.1rem;
     border-radius: 20px 20px 0 0;
+    margin-top: 40px;
 }
