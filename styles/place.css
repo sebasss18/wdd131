@@ -45,7 +45,7 @@ picture img {
     padding: 10px;
     display: inline-block;
     border-radius: 40px 40px 0 0;
-    margin: 20px 100px 0 100px;
+    margin: 20px 50px 0 50px;
 }
 
 #weather-icon {
@@ -67,7 +67,7 @@ ul {
     font-size: 1rem;
     row-gap: 8px;
     border-radius: 0 0 40px 40px;
-    margin: 0px 100px 0px 100px;
+    margin: 0px 50px 0px 50px;
 }
 
 /* Footer */
