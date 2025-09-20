@@ -58,14 +58,11 @@
     }
 
     .weather h2::after {
-        content: '';
+        content: '🌦️';
         display: inline-block; 
-        width: 30px;
-        height: 24px; 
         margin-left: 10px;
-        background: url('../images/weather-icon-white.svg') no-repeat center/contain;
         vertical-align: middle;
-        color: white;
+        font-size: 1.5rem; /* ajusta el tamaño */
     }
 
     ul {
