@@ -120,6 +120,8 @@ temples.forEach(temple => {
   img.src = temple.imageUrl
   img.alt = temple.templeName
   img.loading = "lazy";
+  img.width = 400;
+  img.height = 250;
 
   card.appendChild(name);
   card.appendChild(location);
