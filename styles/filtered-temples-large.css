@@ -37,24 +37,43 @@
         display: none;
     }
 
-    .figure-container {
+    /*#templeCards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        place-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        justify-items: center;
         gap: 10px;
+    }*/
+
+    #templeCards {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap:40px;             
+        align-items: flex-start;
     }
 
-    figure {
-        width: 100%;
+    .temple-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #ACC8E5;
+        border-radius: 30px;
     }
 
-    figure img {
+    .temple-card p {
+        margin: 3px;
+        font-size: 1rem;
+        color: #112A46;
+    }
+
+    img {
         box-shadow: 0 0 0 transparent;
         transition: transform 0.5s, box-shadow 0.5s;
         margin: 0 auto;
     }
 
-    figure img:hover {
+    img:hover {
         transform: scale(1.030);
         box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
     }
