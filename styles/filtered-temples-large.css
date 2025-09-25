@@ -1,0 +1,62 @@
+@media screen and (min-width: 640px) {
+
+    #links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between; /* titulo izq, links der */
+        align-items: center;
+        padding: 30px;
+    }
+
+    header h1 {
+        font-size: 5rem;
+        margin: 0;
+    }
+
+    main h2 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 5px 10px 5px 10px;
+        font-size: 1.8rem;
+        transition: transform 0.3s, border-color 0.3s;
+    }
+
+    nav a:hover {
+        transform: scale(1.1);
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .figure-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        place-items: center;
+        gap: 10px;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    figure img {
+        box-shadow: 0 0 0 transparent;
+        transition: transform 0.5s, box-shadow 0.5s;
+        margin: 0 auto;
+    }
+
+    figure img:hover {
+        transform: scale(1.030);
+        box-shadow: 10px 10px 10px rgba(0,0,0,0.15);
+    }
+
+}
