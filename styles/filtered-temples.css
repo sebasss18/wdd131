@@ -81,8 +81,9 @@ nav a:hover {
 }
 
 img {
-    width: 400px;
-    height: 250px;
+    width: 100%;
+    max-width: 400px;
+    max-height: 250px;
     border-radius: 20px;
 }
 
