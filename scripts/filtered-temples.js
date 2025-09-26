@@ -98,36 +98,69 @@ const temples = [
   },
 ];
 
-const container = document.querySelector("#templeCards");
+createTempleCard(temples);
+filteredTemples()
 
-temples.forEach(temple => {
-  const card = document.createElement("div");
-  card.classList.add("temple-card");
+function filteredTemples() {
 
-  const name = document.createElement("h3");
-  name.textContent = temple.templeName;
+  const allTemples = document.querySelector("#allTemples");
 
-  const location = document.createElement("p")
-  location.textContent = `Location: ${temple.location}`
+  allTemples.addEventListener('click', () => {
+    createTempleCard(temples);
+  })
 
-  const dedicated = document.createElement("p")
-  dedicated.textContent = `Dedicated: ${temple.dedicated}`
+  const oldTemples = document.querySelector('#oldTemples');
+  oldTemples.addEventListener('click', () => {
+    createTempleCard(temples.filter(temple => temple.dedicated < '1900'));
+  })
 
-  const area = document.createElement("p")
-  area.textContent = `Area: ${temple.area}`
+  const newTemples = document.querySelector('#newTemples');
+  newTemples.addEventListener('click', () => {
+    createTempleCard(temples.filter(temple => temple.dedicated > '2000'));
+  })
 
-  const img = document.createElement('img')
-  img.src = temple.imageUrl
-  img.alt = temple.templeName
-  img.loading = "lazy";
-  img.width = 400;
-  img.height = 250;
+  const largeTemples = document.querySelector('#largeTemples');
+  largeTemples.addEventListener('click', () => {
+    createTempleCard(temples.filter(temple => temple.area > '90000'));
+  })
 
-  card.appendChild(name);
-  card.appendChild(location);
-  card.appendChild(dedicated);
-  card.appendChild(area);
-  card.appendChild(img);
+  const smallTemples = document.querySelector('#smallTemples');
+  smallTemples.addEventListener('click', () => {
+    createTempleCard(temples.filter(temple => temple.area < '10000'));
+  })
+};
 
-  container.append(card);
-})
+function createTempleCard(filteredTemples) {
+  const container = document.querySelector("#templeCards");
+  container.innerHTML = '';
+  filteredTemples.forEach(temple => {
+    const card = document.createElement("div");
+    card.classList.add("temple-card");
+
+    const name = document.createElement("h3");
+    name.textContent = temple.templeName;
+
+    const location = document.createElement("p")
+    location.textContent = `Location: ${temple.location}`
+
+    const dedicated = document.createElement("p")
+    dedicated.textContent = `Dedicated: ${temple.dedicated}`
+
+    const area = document.createElement("p")
+    area.textContent = `Area: ${temple.area}`
+
+    const img = document.createElement('img')
+    img.src = temple.imageUrl
+    img.alt = temple.templeName
+    img.loading = "lazy";
+    img.width = 400;
+    img.height = 250;
+
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedicated);
+    card.appendChild(area);
+    card.appendChild(img);
+
+    container.append(card);
+})}
