@@ -104,6 +104,18 @@ textarea:focus {
     border-color: #4a90e2;
 }
 
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+    color: #555;
+}
+
+.select_product {
+    margin-left: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 /* Textarea */
 textarea {
     resize: vertical;
