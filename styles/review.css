@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-color: #e5f2ff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tym {
+    background-color: #222;
+    font-size: 2rem;
+    color: white;
+    padding: 25px;
+    border-radius: 25px;
+    width: 85vw;
+    text-align: center;
+}
