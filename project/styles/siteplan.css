@@ -42,3 +42,8 @@ footer {
     background-color: #f4f4f4;
     margin-top: 25px;
 }
+
+.wireframe img {
+    max-width: 400px;
+    margin-bottom: 50px;
+}
