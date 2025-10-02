@@ -31,6 +31,7 @@ main {
     box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     width: 100%;
     max-width: 500px;
+    min-width: 350px;
     height: auto;
 }
 
@@ -127,7 +128,6 @@ input[type="submit"]:hover {
     display: block;
     margin-bottom: 8px;
     font-size: 1.05rem;
-
 }
 
 .useful_features input[type="checkbox"] {
