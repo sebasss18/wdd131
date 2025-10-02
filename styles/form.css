@@ -6,6 +6,18 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* header */
+header {
+    background: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
 /* Body */
 body {
     background: #f4f4f9;
@@ -145,15 +157,6 @@ input[type="submit"]:hover {
     transform: scale(1.5);
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: #222;
-    color: #fff;
-    font-size: 0.9rem;
-}
-
 /* stars */
 input[type="radio"] {
 	display: none;
@@ -190,7 +193,7 @@ input[type="radio"] {
 	content: "\2605";
 }
 
-/* required */
+/* required and valid */
 
 .rform input:required {
     border-left: solid 8px rgb(255, 92, 92);
@@ -198,4 +201,13 @@ input[type="radio"] {
 
 .rform input:required:valid {
     border-left: solid 8px rgb(102, 255, 102);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #222;
+    color: #fff;
+    font-size: 0.9rem;
 }
