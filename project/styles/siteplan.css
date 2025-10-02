@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: #d0edff;
+    background: #FDF0D5;
     border-radius: 0 0 20px 20px;
     padding: 10px 0;
     text-align: center;
@@ -18,10 +18,16 @@ h1 {
     text-align: center;
 }
 
-h1, h2, h3 {
+h1, h2{
     font-family: "Bebas Neue", sans-serif;
     padding-left: 20px;
     color: #780000;
+}
+
+h3 {
+    font-family: "Bebas Neue", sans-serif;
+    padding-left: 20px;
+    color: #003049;
 }
 
 p {
