@@ -189,3 +189,13 @@ input[type="radio"] {
 .stars input:checked ~ label::before {
 	content: "\2605";
 }
+
+/* required */
+
+.rform input:required {
+    border-left: solid 8px rgb(255, 92, 92);
+}
+
+.rform input:required:valid {
+    border-left: solid 8px rgb(102, 255, 102);
+}
