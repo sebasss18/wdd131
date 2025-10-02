@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Form</title>
+    <meta name="description" content="A form to submit reviews.">
+    <meta name="author" content="Saul Sebastian Bernal Sotelo">
+    <link rel="stylesheet" href="styles/form.css">
+    <script type="module" src="scripts/form.js"></script>
+</head>
+<body>
+    <main>
+        <form action="review.html" method="get" class="rform">
+            <select name="product_name" id="product" required>
+                <option value="" disabled selected>Select a product</option>
+            </select>
+            <div class="stars">
+                <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+            </div>
+            <fieldset>
+                <legend>Review Details</legend>
+                <div class="date">
+                    <label>Date of review<input type="date" id="date" name="date" required></label>
+                </div>
+
+                <div class="useful_features">
+                    <span>Most Useful Features:</span>
+                    <label><input type="checkbox" name="feature" value="ease of use">Ease of Use</label>
+                    <label><input type="checkbox" name="feature" value="performance">Performance</label>
+                    <label><input type="checkbox" name="feature" value="design">Design</label>
+                    <label><input type="checkbox" name="feature" value="support">Support</label>
+                </div>
+
+                <div class="written_review">
+                    <label>Your Review:<textarea id="review" name="review" rows="2"></textarea></label>
+                </div>
+
+                <div class="user_name">
+                    <label>Your Name:<input type="text" id="name" name="user_name"></label>
+                </div>
+            </fieldset>
+            <input type="submit" value="Submit Review">
+        </form>
+    </main>
+<footer>
+    <p>&copy; 2025 Sebastian Bernal | All rights reserved</p>
+</footer>
+</body>
+</html>
