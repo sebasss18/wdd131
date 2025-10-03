@@ -191,10 +191,6 @@ input[type="radio"] {
 	align-items: center;
 }
 
-.stars > label:hover {
-	color: rgb(230, 195, 0);
-}
-
 .stars > label::before {
 	content: "☆";
 }
