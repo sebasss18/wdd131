@@ -173,13 +173,12 @@ input[type="submit"]:hover {
 input[type="radio"] {
 	display: none;
 	position: relative;
-	caret-color: rgba(255, 255, 255, 0);
 }
 
 .stars {
 	display: flex;
 	flex-direction: row-reverse;
-	justify-content: left;
+	justify-content: right;
 }
 
 .stars > label {
@@ -190,20 +189,27 @@ input[type="radio"] {
 	margin-left: 5px;
 	display: flex;
 	align-items: center;
-	caret-color: rgba(0, 0, 0, 0);
 }
 
 .stars > label:hover {
-	color: #c2c2c2;
+	color: rgb(230, 195, 0);
 }
 
 .stars > label::before {
-	content: "\2606";
+	content: "☆";
 }
 
 .stars input:checked ~ label::before {
-	content: "\2605";
+	content: "★";
 }
+
+.rate {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: right;
+}   
 
 /* required and valid */
 
@@ -213,6 +219,10 @@ input[type="radio"] {
 
 .rform input:required:valid {
     border-left: solid 8px rgb(102, 255, 102);
+}
+
+.stars input[type="radio"]:required:invalid + label {
+    color: rgb(183, 183, 183);
 }
 
 /* Footer */

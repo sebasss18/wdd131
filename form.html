@@ -21,13 +21,15 @@
             <select name="product_name" id="product" required>
                 <option value="" disabled selected>Select a product</option>
             </select>
-
             <div class="stars">
                 <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
                 <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
                 <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
                 <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
                 <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                <div class="rating">
+                    <label>Rate the product:</label>
+                </div>
             </div>
             <fieldset>
                 <legend>Review Details</legend>
@@ -51,7 +53,7 @@
                     <label>Your Name:<input type="text" id="name" name="user_name"></label>
                 </div>
             </fieldset>
-            <input type="submit" value="submit">
+            <input type="submit" value="Submit Review">
         </form>
     </main>
 <footer>
