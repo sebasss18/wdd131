@@ -1,0 +1,230 @@
+:root {
+    --title-color: #780000;
+    --text-color: #003049;
+    --background-color: #FDF0D5;
+    --details-color: #C1121F;
+    --blue-details-color: #669BBC;
+    --title-font: 'Bebas Neue', sans-serif;
+    --text-font: 'Roboto', sans-serif;
+}
+
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+/* Form */
+.rform {
+    background: var(--background-color);
+    padding: 30px 40px;
+    border-radius: 30px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 500px;
+    min-width: auto;
+    height: auto;
+}
+
+/* Fieldset */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    display: block;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 1.4rem;
+}
+
+.rform label,
+.rform input,
+.rform select,
+.rform textarea {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+label[for="movie"] {
+    margin-left: 10px;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    margin-top: 0px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+select {
+    margin: 10px 0;
+}
+
+select option {
+    padding: 20px;
+}
+
+.rform select {
+    appearance: none;
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8cGF0aCBkPSJNMTkgOWwtNyA3LTctN2gxNGwtNyA3eiIvPgo8L3N2Zz4=') no-repeat right 10px center;
+    background-size: 12px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--title-color);
+}
+
+input::placeholder,
+textarea::placeholder,
+select::placeholder {
+    color: #555;
+}
+
+.select_product {
+    margin-left: 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+    min-height: 60px;
+}
+
+/* Submit button */
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: var(--title-color);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+}
+
+.written_review label {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.written_review textarea {
+    margin-top: 0px;
+}
+
+input[type="submit"]:hover {
+    background: var(--details-color);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px) scale(1.02);
+}
+
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: right;
+    margin-bottom: 10px;
+}
+
+.stars > label {
+	color: var(--title-color);
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+}
+
+.stars > label::before {
+	content: "☆";
+}
+
+.stars input:checked ~ label::before {
+	content: "★";
+}
+
+.rate {
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: right;
+}   
+
+#add_movie_btn {
+    width: 100%;
+    max-width: 200px;
+    padding: 7px 0;
+    background-color: var(--title-color);
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-top: 5px;
+}
+
+#add_movie_btn:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px) scale(1.02);
+    background-color: var(--details-color);
+    border-radius: 25px;
+}
+
+/* required and valid */
+
+.rform input:required {
+    border-left: solid 8px rgb(255, 92, 92);
+}
+
+textarea:invalid {
+  border-left: solid 8px rgb(255, 92, 92);
+}
+
+textarea:valid {
+  border-left: solid 8px rgb(102, 255, 102);
+}
+
+.rform input:required:valid {
+    border-left: solid 8px rgb(102, 255, 102);
+}
+
+.stars input[type="radio"]:required:invalid + label {
+    color: rgb(183, 183, 183);
+}

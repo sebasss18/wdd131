@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Movie Review</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index_mobile.css">
+    <link rel="stylesheet" href="styles/rate_movie.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="popcorn_picks_logo">
+            <img src="images/popcorn_picks_logo.svg" alt="popcorn_picks_logo" width="100">
+        </div>
+        <h1>Rate your movie</h1>
+        <button id="menu"></button>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="reviews.html">Add Movie</a>
+            <a href="my_list.html">My List</a>
+        </nav>
+    </header>
+    <main>
+        <form class="rform" id="add_movie_form">
+            <h2>Add a New Movie</h2>
+
+            <div class="movie_name">
+                <label for="movie_name">Movie Name:</label>
+                <input type="text" id="movie_name" name="movie_name" required placeholder="Enter movie title">
+            </div>
+
+            <div class="movie_description">
+                <label for="movie_description">Description:</label>
+                <textarea id="movie_description" name="movie_description" rows="4" required placeholder="Enter movie description"></textarea>
+            </div>
+
+            <div class="movie_release">
+                <label for="release_date">Release Date:</label>
+                <input type="date" id="release_date" name="release_date">
+            </div>
+
+            <div class="movie_src">
+                <label for="movie_src">Movie Image URL:</label>
+                <input type="text" id="movie_src" name="movie_src" placeholder="Enter image URL" required>
+            </div>
+
+            <input type="submit" value="Add Movie">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id = "currentyear"></span>PopcornPicks | All Rights Reserved</p>
+        <p id = "last-modified"></p>
+    </footer>
+</body>
+</html>

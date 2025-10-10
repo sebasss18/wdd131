@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rate Movie Form</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index_mobile.css">
+    <link rel="stylesheet" href="styles/rate_movie.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="popcorn_picks_logo">
+            <img src="images/popcorn_picks_logo.svg" alt="popcorn_picks_logo" width="100">
+        </div>
+        <h1>Rate your movie</h1>
+        <button id="menu"></button>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="reviews.html">Add Movie</a>
+            <a href="my_list.html">My List</a>
+        </nav>
+    </header>
+    <main>
+        <form action="index.html" method="get" class="rform">
+            <label for="movie">Movie:</label>
+            <button type="button" id="add_movie_btn">Add New Movie</button>
+            <select name="movie_name" id="movie" required>
+                <option value="" disabled selected>Select a Movie</option>
+            </select>
+            <div class="stars">
+                <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                <div class="rating">
+                    <label>Rate:</label>
+                </div>
+            </div>
+            <fieldset>
+                <legend>Review Details</legend>
+                <div class="date">
+                    <label>Date of review:<input type="date" id="date" name="date" required></label>
+                </div>
+
+                <div class="written_review">
+                    <label>Your Review:</label>
+                    <textarea id="review" name="review" rows="2" required></textarea>
+                </div>
+
+                <div class="user_name">
+                    <label>Your Name:<input type="text" id="name" name="user_name"></label>
+                </div>
+            </fieldset>
+            <input type="submit" value="Rate it">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id = "currentyear"></span>PopcornPicks | All Rights Reserved</p>
+        <p id = "last-modified"></p>
+    </footer>
+</body>
+</html>

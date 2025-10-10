@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <meta name="description" content="Discover and share the best movies on PopCornPicks: personalized recommendations, top-rated lists, and your next favorite films from cinema and streaming.">
+    <meta name="author" content="Saul Sebastian Bernal Sotelo">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index_mobile.css">
+    <script type="module" src="scripts/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="popcorn_picks_logo">
+            <img src="images/popcorn_picks_logo.svg" alt="popcorn_picks_logo" width="100">
+        </div>
+        <h1>Popcorn Picks</h1>
+        <button id="menu" aria-label="open navigation button"></button>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="reviews.html">Add Movie</a>
+            <a href="my_list.html">My List</a>
+        </nav>
+    </header>
+    <main>
+        <section id="main">
+            <div id="recommendations">
+                <div class="left_content">
+                    <h2>Recommended for you</h2>
+                    <p id="movie_desc"></p>
+                    <div class="rating">
+                        <div class="stars"></div>
+                        <span class="reviews_count"></span>
+                    </div>
+                    <input type="button" value="Rate it" class="rate_btn">
+                </div>
+                <img id="movies" alt="recommended movie">
+            </div>
+        </section>
+        <section id="trending">
+            <h2>trending</h2>
+            <div id="movie_cards"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id = "currentyear"></span>PopcornPicks | All Rights Reserved</p>
+        <p id = "last-modified"></p>
+    </footer>
+</body>
+</html>
