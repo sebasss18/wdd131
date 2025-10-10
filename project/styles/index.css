@@ -27,6 +27,11 @@ body {
     background-color: #eef9ff;
 }
 
+.popcorn_picks_logo img {
+    height: auto;
+    width: clamp(140px, 6vw, 250px);
+}
+
 header h1 {
     font-size: clamp(2.5rem, 6vw, 4rem);
 
@@ -266,14 +271,13 @@ header .navbar a:hover {
 #movie_cards .movie_card button:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transform: scale(1.02);
-    background-color: var(--details-color);
     border-radius: 25px;
 }
 
 #movie_cards .movie_card button:active {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transform: scale(0.70);
-    background-color: var(--blue-details-color);
+    background-color: var(--text-color);
 }
 
 #movie_cards .movie_card:hover img {
@@ -332,13 +336,13 @@ header .navbar a:hover {
 #my_list button:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transform: scale(1.02);
-    background-color: var(--details-color);
     border-radius: 25px;
 }
 
 #my_list button:active {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transform: scale(0.80);
+    background-color: var(--details-color);
     border-radius: 10px;
 }
 

@@ -1,5 +1,9 @@
 @media screen and (max-width: 600px) {
 
+    .popcorn_picks_logo img {
+        width: clamp(90px, 5vw, 150px);
+    }
+
     header {
         grid-template-columns: auto 1fr auto;
         justify-items: center;
