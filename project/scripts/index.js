@@ -210,8 +210,10 @@ document.addEventListener('DOMContentLoaded', () => {
             card.classList.add('movie_card');
             const img = document.createElement('img');
             img.src = movie.src;
-            img.alt = movie.name
-            img.width = 200;
+            img.alt = movie.name;
+            img.loading = 'lazy';
+            img.width = 250;
+            img.height = 140;
 
             const name = document.createElement('h3');
             name.textContent = movie.name;

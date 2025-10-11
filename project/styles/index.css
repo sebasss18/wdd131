@@ -108,6 +108,14 @@ header .navbar a:hover {
     align-items: center;
 }
 
+#recommendations img {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 #main #recommendations .left_content {
     display: flex;
     flex-direction: column; 
