@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const addMovieBtn = document.querySelector("#add_movie_btn");
     if (addMovieBtn) {
         addMovieBtn.addEventListener("click", () => {
-            window.location.href = "reviews.html"
+            window.location.href = "add_movie.html"
         });
     }
 
