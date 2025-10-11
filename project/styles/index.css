@@ -308,7 +308,7 @@ header .navbar a:hover {
 }
 
 #my_list h3 {
-    font-size: clamp(1.4, 4vw, 3rem);
+    font-size: 3rem;
     text-align: center;
 }
 
