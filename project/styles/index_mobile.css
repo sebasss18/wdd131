@@ -1,11 +1,12 @@
 @media screen and (max-width: 600px) {
 
     .popcorn_picks_logo img {
-        width: clamp(90px, 5vw, 150px);
+        width: 100px;
+        height: auto;
     }
 
     header {
-        grid-template-columns: auto 1fr auto;
+        grid-template-columns: 0.5fr 1fr auto;
         justify-items: center;
         text-align: center;
     }
@@ -24,19 +25,18 @@
         outline: none;
     }
 
-    /* hide navbar by default */
     header .navbar {
-        display: none;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        margin-top: 10px;
+        visibility: hidden;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease;
     }
 
-    /* show when toggled */
     header .navbar.show {
-        display: flex;
-        flex-direction: column;
+        visibility: visible;
+        opacity: 1;
+        max-height: 550px;
     }
 
     header .navbar a {
