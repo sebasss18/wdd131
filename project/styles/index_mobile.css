@@ -2,6 +2,7 @@
 
     .popcorn_picks_logo img {
         width: 100px;
+        aspect-ratio: 2 / 2;
         height: auto;
     }
 
@@ -95,6 +96,7 @@
         grid-column: 1;
         width: 100%;
         max-width: 100%;
+        aspect-ratio: 16/9;
         height: auto;
         border-radius: 10px;
         display: block;
@@ -105,8 +107,12 @@
     transition: all 0.5s;
     }
 
-    #movie_cards img:hover {
+    #movie_cards img:active {
         border-radius: 15px;
+    }
+
+     #movie_cards img:hover {
+        transform: none;
     }
 
     footer {
