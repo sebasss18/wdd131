@@ -7,6 +7,7 @@
     }
 
     header {
+        gap: 0px;
         grid-template-columns: 0.5fr 1fr auto;
         justify-items: center;
         text-align: center;
